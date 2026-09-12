@@ -5,3 +5,16 @@
    font-style: normal;
    font-display: swap;
 }
+
+:root {
+   /* define custom colors here */
+   --bottle-green: #596D48;
+   --input-border: #E5E7EB;
+   --invalid-input-border: rgb(176, 14, 14);
+   --focus-input-border: rgb(29, 45, 186);
+}
+
+body {
+   font-family: 'NorseBold', 'Times New Roman', Times, serif;
+}
+
