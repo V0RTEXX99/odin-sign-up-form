@@ -17,7 +17,7 @@
    --bottle-green: #596D48;
    --input-border: #E5E7EB;
    --invalid-input-border: rgb(176, 14, 14);
-   --focus-input-border: rgb(29, 45, 186);
+   --focus-input-border: rgb(4, 26, 223);
 }
 
 body {
@@ -71,7 +71,7 @@ body {
 
    flex: 1;
 
-   background-color: rgb(238, 238, 238);
+   background-color: rgb(250, 250, 250);
 
    display: flex;
    flex-direction: column;
@@ -81,7 +81,7 @@ body {
    font-size: 20px;
    font-weight: 700;
 
-   margin-top: 140px;
+   margin-top: 120px;
    margin-left: 40px;
    margin-right: 40px;
 }
@@ -130,7 +130,7 @@ body {
 }
 .form-item input {
    width: 300px;
-   height: 30px;
+   height: 34px;
 
    color: rgb(29, 28, 28);
    font-size: 16px;
@@ -140,8 +140,40 @@ body {
    border-radius: 4px;
    border-style: solid;
    border-color: var(--input-border);
+   border-width: 2px;
+   outline: none;
+}
+.form-item input:user-invalid {
+   border-color: var(--invalid-input-border);
 }
 .form-item input:focus {
    border-color: var(--focus-input-border);
+}
+
+
+.submit-area {
+   padding: 30px 40px;
+}
+.create-account-button {
+   padding: 10px 30px;
+
+   text-align: center;
+   color: white;
+   font-weight: 600;
+   font-size: 16px;
+
+   background-color: var(--bottle-green);
+   
+   border: none;
+   border-radius: 5px;
+}
+.already-have-account {
+   margin-top: 20px;
+   font-weight: 500;
+}
+.already-have-account a {
+   font-weight: 500;
+   text-decoration: none;
+   color: var(--bottle-green);
 }
 

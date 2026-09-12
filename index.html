@@ -52,17 +52,17 @@
                <div class="form-row">
                   <div class="form-item">
                      <label for="first-name">FIRST NAME</label>
-                     <input type="text" id="first-name" name="first-name">
+                     <input type="text" id="first-name" name="first-name" required>
                   </div>
                   <div class="form-item">
                      <label for="last-name">LAST NAME</label>
-                     <input type="text" id="last-name" name="last-name">
+                     <input type="text" id="last-name" name="last-name" required>
                   </div>
                </div>
                <div class="form-row">
                   <div class="form-item">
                      <label for="email">EMAIL</label>
-                     <input type="email" name="email" id="email">
+                     <input type="email" name="email" id="email" required>
                   </div>
                   <div class="form-item">
                      <label for="phone-number">PHONE NUMBER</label>
@@ -72,18 +72,30 @@
                <div class="form-row">
                   <div class="form-item">
                      <label for="password">PASSWORD</label>
-                     <input type="password" name="password" id="password">
+                     <input type="password" name="password" id="password" required minlength="1">
                   </div>
                   <div class="form-item">
                      <label for="confirm-password">CONFIRM PASSWORD</label>
-                     <input type="password" name="confirm-password" id="confirm-password">
+                     <input type="password" name="confirm-password" id="confirm-password" required minlength="1">
                   </div>
 
 
                </div>
 
             </form>
+
          </div>
+
+         <div class="submit-area">
+            <button class="create-account-button">
+               Create Account
+            </button>
+            <p class="already-have-account">
+               Already have an account? <a href="">Log in</a>
+            </p>
+         </div>
+
+
 
       </div>
    </div>
